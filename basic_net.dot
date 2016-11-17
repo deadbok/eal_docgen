@@ -1,0 +1,15 @@
+
+graph "Example network"
+{
+	{
+		Internet [shape=ellipse]
+		Router [shape=circle]
+		Switch [shape=box]
+		Client [shape=square]
+		Server [shape=square]
+	}
+	Internet--Router [ label="dhcp" headlabel="ge-0/0/1"  taillabel="wan" ];
+	Router--Switch  [ label="192.168.0.0/24" headlabel="port 0"  taillabel="ge-0/0/0" ];
+	Switch--Client [ label="192.168.0.5" headlabel="eth0"  taillabel="port 1" len=2];
+	Switch--Server [ label="192.168.0.2" headlabel="eth0"  taillabel="port 2" len=2];
+}
