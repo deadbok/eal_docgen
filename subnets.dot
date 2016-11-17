@@ -1,0 +1,18 @@
+graph "Example network"
+{
+	graph [bb="0,0,1028,328"];
+	rankdir="LR" 
+	{
+		Internet [shape=plaintext image="network.png"];
+		Router [shape=plaintext image="router.png" label="\n\n\n\nRouter"];
+		SRV [shape=plaintext image="network.png"];
+		USR [shape=plaintext image="network.png"];
+		Client [shape=plaintext image="client-laptop.png" label="\n\n\n\n\nServer"];
+		Server [shape=plaintext image="server.png" label="\n\n\n\n\nClient"];
+	}
+	Internet--Router [ headlabel="ge-0/0/0"];
+	Router--USR [ taillabel="ge-0/0/1"];
+	Router--SRV [ taillabel="ge-0/0/2"];
+	USR--Client [ headlabel="eth0"];
+	SRV--Server [ headlabel="eth0"];
+}
