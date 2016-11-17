@@ -2,11 +2,11 @@ graph "Example network"
 {
 	rankdir="LR"
 	{
-		Internet [shape=plaintext image="network.png" ]
-		Router [shape=plaintext image="router.png" label="\n\n\n\nRouter" ]
-		Switch [shape=plaintext image="switch.png" label="\n\n\n\nSwitch"]
-		Client [shape=plaintext image="client-laptop.png" label="\n\n\n\n\nClient" ]
-		Server [shape=plaintext image="server.png" label="\n\n\n\n\nServer" ]
+		Internet [shape=plaintext image="images/network.png" ]
+		Router [shape=plaintext image="mages/router.png" label="\n\n\n\nRouter" ]
+		Switch [shape=plaintext image="images/switch.png" label="\n\n\n\nSwitch"]
+		Client [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\nClient" ]
+		Server [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer" ]
 	}
 	Internet--Router [ headlabel=" ge-0/0/1" bgcolor="white"];
 	Router--Switch [ headlabel=" port 0" taillabel="ge-0/0/0 "];
