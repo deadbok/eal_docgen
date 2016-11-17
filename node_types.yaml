@@ -1,0 +1,32 @@
+---
+# Default values for node types. Each type has an icon and the number
+# of newlines to move the label to a nicer location.
+
+network:
+  image: "images/network.png"
+  newlines: 0
+
+router:
+  image: "mages/router.png"
+  newlines: 4
+
+switch:
+  image: "images/switch.png"
+  newlines: 4
+
+client:
+  image: "images/client-laptop.png"
+  newlines: 5
+
+client-laptop:
+  image: "images/client-laptop.png"
+  newlines: 5
+
+client-workstation:
+  image: "images/client-workstation.png"
+  newlines: 4
+
+server:
+  image: "images/server.png"
+  newlines: 4
+...

@@ -1,4 +1,4 @@
-graph "Example network"
+graph "Second example"
 {
 	graph [bb="0,0,1028,328"];
 	rankdir="LR" 
@@ -7,8 +7,8 @@ graph "Example network"
 		Router [shape=plaintext image="images/router.png" label="\n\n\n\nRouter"];
 		SRV [shape=plaintext image="images/network.png"];
 		USR [shape=plaintext image="images/network.png"];
-		Client [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\nServer"];
-		Server [shape=plaintext image="images/server.png" label="\n\n\n\n\nClient"];
+		Client [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\nClient"];
+		Server [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer"];
 	}
 	Internet--Router [ headlabel="ge-0/0/0"];
 	Router--USR [ taillabel="ge-0/0/1"];

@@ -1,9 +1,9 @@
-graph "Example network"
+graph "First example"
 {
 	rankdir="LR"
 	{
 		Internet [shape=plaintext image="images/network.png" ]
-		Router [shape=plaintext image="mages/router.png" label="\n\n\n\nRouter" ]
+		Router [shape=plaintext image="images/router.png" label="\n\n\n\nRouter" ]
 		Switch [shape=plaintext image="images/switch.png" label="\n\n\n\nSwitch"]
 		Client [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\nClient" ]
 		Server [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer" ]
