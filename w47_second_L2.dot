@@ -1,0 +1,13 @@
+graph "Second example"
+{
+	rankdir="LR" 
+	{
+		Internet [shape=plaintext image="images/network.png"];
+		Router [shape=plaintext image="images/router.png" label="\n\n\n\nRouter"];
+		Client [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\nClient"];
+		Server [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer"];
+	}
+	Internet--Router [ headlabel="ge-0/0/0"];
+	Router--Client [ taillabel="ge-0/0/1" headlabel="eth0"];
+	Router--Server [ taillabel="ge-0/0/2" headlabel="eth0"];
+}

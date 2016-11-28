@@ -1,0 +1,15 @@
+graph "First example"
+{
+	rankdir="LR"
+	{
+		Internet [shape=plaintext image="images/network.png" ]
+		Router [shape=plaintext image="images/router.png" label="\n\n\n\nRouter" ]
+		Switch [shape=plaintext image="images/switch.png" label="\n\n\n\nSwitch"]
+		Client [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\n\nClient" ]
+		Server [shape=plaintext image="images/server.png" label="\n\n\n\n\n\nServer" ]
+	}
+	Internet--Router [ headlabel=" ge-0/0/1" bgcolor="white"];
+	Router--Switch [ headlabel=" port 0" taillabel="ge-0/0/0 "];
+	Switch--Client [ headlabel=" eth0" taillabel="port 1 "];
+	Switch--Server [ headlabel=" eth0" taillabel="port 2 "];
+}

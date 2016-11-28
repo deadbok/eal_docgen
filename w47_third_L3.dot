@@ -1,0 +1,25 @@
+graph "Second example"
+{
+	rankdir="LR" 
+	{
+		"Internet" [shape=plaintext image="images/network.png"];
+		"ROUTER-INT" [shape=plaintext image="images/router.png" label="\n\n\n\nROUTER-INT"];
+		"ROUTER-EXT" [shape=plaintext image="images/router.png" label="\n\n\n\nROUTER-EXT"];
+		"Client" [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\nClient"];
+		"Server-DMZ" [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer-DMZ"];
+		"Server-SRV" [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer-SRV"];
+		"DMZ" [shape=plaintext image="images/network.png"  label="DMZ\n1.0.0.0/24"];
+		"R2R" [shape=plaintext image="images/network.png"  label="R2R\n1.0.1.0/24"];
+		"SRV" [shape=plaintext image="images/network.png"  label="SRV\n192.168.1.0/24"];
+		"USR" [shape=plaintext image="images/network.png"  label="USR\n192.168.0.0/24"];
+	}
+	"Internet"--"ROUTER-EXT" [ headlabel="dhcp"];
+	"ROUTER-EXT"--"DMZ" [ taillabel=".1"];
+	"DMZ"--"Server-DMZ" [ headlabel=".2"];
+	"ROUTER-EXT"--"R2R" [ taillabel=".2"];
+	"R2R"--"ROUTER-INT" [ taillabel=".1"];
+	"ROUTER-INT"--"SRV" [ taillabel=".1"];
+	"SRV"--"Server-SRV" [ headlabel=".2"];
+	"ROUTER-INT"--"USR" [ taillabel=".1"];
+	"USR"--"Client" [ headlabel=".5"];
+}

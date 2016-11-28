@@ -1,0 +1,17 @@
+graph "Second example"
+{
+	rankdir="LR" 
+	{
+		"Internet" [shape=plaintext image="images/network.png"];
+		"ROUTER-INT" [shape=plaintext image="images/router.png" label="\n\n\n\nROUTER-INT"];
+		"ROUTER-EXT" [shape=plaintext image="images/router.png" label="\n\n\n\nROUTER-EXT"];
+		"Client" [shape=plaintext image="images/client-laptop.png" label="\n\n\n\n\nClient"];
+		"Server-DMZ" [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer-DMZ"];
+		"Server-SRV" [shape=plaintext image="images/server.png" label="\n\n\n\n\nServer-SRV"];
+	}
+	"Internet"--"ROUTER-EXT" [ headlabel="ge-0/0/2"];
+	"ROUTER-EXT"--"Server-DMZ" [ taillabel="ge-0/0/1" headlabel="eth0"];
+	"ROUTER-EXT"--"ROUTER-INT" [ taillabel="ge-0/0/0" headlabel="ge-0/0/2"];
+	"ROUTER-INT"--"Server-SRV" [ taillabel="ge-0/0/1" headlabel="eth0"];
+	"ROUTER-INT"--"Client" [ taillabel="ge-0/0/0" headlabel="eth0"];
+}
