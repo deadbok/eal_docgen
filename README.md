@@ -20,16 +20,16 @@ Example files for the System Design class network documentation generator at EAL
 
 ### Week 47 ##
 
- * [w46_first.yaml](w46_first.yaml): YAML input first example for week 47.
- * [w46_first.dot](w46_first.dot): Dot file for the first example for week 47.
+ * [w47_first.yaml](w47_first.yaml): YAML input first example for week 47.
+ * [w47_first.dot](w47_first.dot): Dot file for the first example for week 47.
  * [w47_first_L2.png](w47_first_L2.png): Rendered dot L2 output for the first example for week 47.
  * [w47_first_L3.png](w47_first_L3.png): Rendered dot L3 output for the first example for week 47.
- * [w46_second.yaml](w46_first.png): YAML input second example for week 47.
- * [w46_second.dot](w46_second.dot): Dot file for the second example for week 47.
+ * [w47_second.yaml](w47_first.png): YAML input second example for week 47.
+ * [w47_second.dot](w47_second.dot): Dot file for the second example for week 47.
  * [w47_second_L2.png](w47_second_L2.png): Rendered dot L2 output for the first example for week 47.
  * [w47_second_L3.png](w47_second_L3.png): Rendered dot L3 output for the first example for week 47.
- * [w46_third.yaml](w46_third.yaml): YAML input first example for week 47.
- * [w46_third.dot](w46_third.dot): Dot file for the first example for week 47.
+ * [w47_third.yaml](w47_third.yaml): YAML input first example for week 47.
+ * [w47_third.dot](w47_third.dot): Dot file for the first example for week 47.
  * [w47_third_L2.png](w47_third_L2.png): Rendered dot L2 output for the first example for week 47.
  * [w47_third_L3.png](w47_third_L3.png): Rendered dot L3 output for the first example for week 47.
 
