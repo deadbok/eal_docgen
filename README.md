@@ -68,17 +68,4 @@ Example files for the System Design class network documentation generator at EAL
 ![Rendered output for week 47 L3](w47_third_L3.png)
 
 
-w47_first_L2.dot
--rwxrwxr-x 1 oblivion users  52665 dec  5 22:55 
--rwxrwxr-x 1 oblivion users    590 nov 21 14:23 w47_first_L3.dot
--rwxrwxr-x 1 oblivion users  46194 dec  5 22:55 
--rwxrwxr-x 1 oblivion users    506 nov 21 14:46 w47_second_L2.dot
--rwxrwxr-x 1 oblivion users  41837 nov 21 15:07 
--rwxrwxr-x 1 oblivion users    698 nov 21 14:50 w47_second_L3.dot
--rwxrwxr-x 1 oblivion users  56376 dec  5 22:55 
--rwxrwxr-x 1 oblivion users    878 nov 21 15:15 w47_third_L2.dot
--rwxrwxr-x 1 oblivion users  74776 nov 21 15:16 
--rwxrwxr-x 1 oblivion users   1234 nov 21 15:29 w47_third_L3.dot
--rwxrwxr-x 1 oblivion users  97195 dec  5 22:55 
-
 
